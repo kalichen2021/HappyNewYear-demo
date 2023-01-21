@@ -1,13 +1,28 @@
-body{
-  background-color: black;
+html,
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
 }
 
-div{
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+#box {
+  width: auto;
+  height: auto;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 400px;
-  height: 300px;
-  background-color: aqua;
+
+  /* background-color: antiquewhite */;
+  text-align: center;
+  font-size: 800%;
+  
+}
+
+.box{
+  transition: transform 1s;
+  transform: scale(2,2);
 }
