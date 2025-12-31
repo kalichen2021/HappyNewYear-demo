@@ -15,7 +15,7 @@ function initVars() {
     yaw =
     pitchV =
     yawV =
-      0;
+    0;
   scale = 600;
   seedTimer = 0;
   (seedInterval = 5), (seedLife = 100);
@@ -163,8 +163,8 @@ function splode(x, y, z) {
   }
   d = Math.sqrt(
     (x - playerX) * (x - playerX) +
-      (y - playerY) * (y - playerY) +
-      (z - playerZ) * (z - playerZ)
+    (y - playerY) * (y - playerY) +
+    (z - playerZ) * (z - playerZ)
   );
   pow.volume = 1.5 / (1 + d / 10);
   pow.play();
@@ -320,8 +320,8 @@ function draw() {
             ctx.lineWidth =
               1 +
               (sparks[i].radius * 10) /
-                (sparks[i].trail.length - j) /
-                (1 + point2.d);
+              (sparks[i].trail.length - j) /
+              (1 + point2.d);
             ctx.lineTo(point2.x, point2.y);
             ctx.stroke();
             point1.x = point2.x;
@@ -356,5 +356,3 @@ window.addEventListener("resize", () => {
   cx = canvas.width / 2;
   cy = canvas.height / 2;
 });
-initVars();
-frame();
